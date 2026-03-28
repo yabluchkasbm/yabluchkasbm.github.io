@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список справ для жигулів</title>
+    <link rel="stylesheet" href="style666.css">
+    
+</head>
+<body>
+
+
+
+    <div class="main-juguli-list" v-cloak>
+        <h1  v-bind:style="{color: note.length > 15? 'red' : 'green', fontStyle: note.length > 10? 'italic': 'normal'}">{{title}}</h1>
+        <input placeholder="Введіть кількість жигулів" v-on:keyup.enter="Add()" v-model="note" type="text" class="inp-note">
+        <p class="p-note">{{note}}</p>
+        <button v-bind:disabled="note == '' || note == ' ' " class="btn-add" v-on:click="Add()">Додати</button>
+        <ul class="list-note">
+            <li class="list-item" v-for="(el,i) in notesArr">
+               {{i +1}}. {{el}}  
+               
+               <button class="del-btn" v-on:click="Delete(i)">X</button>
+                 </li>
+        </ul>
+
+        <div class="empty" v-if="notesArr.length == 0">
+            <p>Ви ще не додали жодного жигуля</p>
+        </div>
+    
+    </div>
+
+
+
+
+
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+
+    <script src="1.js"></script>
+    
+</body>
+</html>

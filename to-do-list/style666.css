@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    background-color: rgb(44, 46, 36);
+}
+
+.main-juguli-list{
+    background-color: rgb(119, 146, 85);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(221, 237, 222);
+}
+
+
+.inp-note{
+    outline: none;
+    border: none;
+    width: 80%;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 20px;
+}
+
+
+.inp-note:focus{
+    background-color: rgb(32, 142, 78);
+    color: bisque;
+}
+
+.btn-add{
+    border: 10px outset greenyellow;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: rgb(58, 113, 76);
+    font-size: 1.1em;
+    font-weight: 900;
+    
+    
+}
+
+.btn-add:active{
+    border: 10px inset greenyellow;
+    color: black;
+    box-shadow: 0px 2px 3px rgb(54, 113, 72);
+}
+
+.inp-note:focus::placeholder{
+    font-weight: 900;
+    color: black;
+}
+
+.list-note{
+    padding-left: 0;
+    list-style-type:none;
+}
+
+.list-item{
+    font-size: 1.3em;
+    padding: 10px 0;
+    border-bottom: 3px solid greenyellow;
+    color: rgb(54, 76, 55);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-right: 10px;
+}
+
+.del-btn{
+     border: none;
+    border-radius: 10%;
+    padding: 0px 20px;
+    color: rgb(139, 168, 149);
+    background-color: rgb(57, 82, 56);
+    font-weight: 900;
+    margin-top: 10px;
+}
+
+
+button[disabled]{
+    border-color: grey;
+    color: rgb(202, 187, 187);
+    background-color: gray;
+}
+
+
+[v-cloak]{
+    display: none;
+}
