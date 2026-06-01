@@ -4,7 +4,7 @@
 
 
 body {
-    background-color: rgb(74, 40, 55);
+    background-color: rgb(38, 17, 26);
     margin: 0;
     user-select: none;
 
@@ -12,7 +12,8 @@ body {
 
 }
 
-img, video {
+img,
+video {
     width: 100%;
 }
 
@@ -82,7 +83,6 @@ h2 {
     text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
     letter-spacing: 0.125em;
     animation-duration: 0.8s;
-
     animation-iteration-count: infinite;
     animation-direction: alternate;
 
@@ -133,30 +133,6 @@ h3 {
 
 }
 
-.arrow-left,
-.arrow-right {
-    position: absolute;
-    height: 100%;
-    top: 0;
-    z-index: 5;
-    background-color: rgba(255, 255, 255, 0.356);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    transition: 0.8s;
-    font-size: 4em;
-}
-
-.arrow-left:hover,
-.arrow-right:hover {
-    background-color: rgba(134, 131, 131, 0.658);
-
-}
-
-.arrow-right {
-    right: 0;
-}
 
 .item-wrap {
 
@@ -181,35 +157,33 @@ h3 {
 
 
 
-/* 1. Лінійний рух без ривків */
 .myMarqueeSwiper .swiper-wrapper {
     margin-top: 30px;
     margin-bottom: 30px;
-
     transition-timing-function: linear !important;
     display: flex !important;
-  }
-  
-  /* 2. Скидаємо примусове розтягування слайду */
-  .myMarqueeSwiper .swiper-slide {
-    width: auto !important; 
+}
+
+
+.myMarqueeSwiper .swiper-slide {
+    width: auto !important;
     flex-shrink: 0 !important;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  /* 3. Контроль розміру самих картинок всередині */
-  .myMarqueeSwiper .swiper-slide img {
-    width: 100% !important;     /* Тепер картинка заповнить свій шматочок (1/4 екрана) */
-    height: 300px !important;   /* Фіксована висота рядка, підлаштуйте під себе */
-    object-fit: cover !important; /* Фотографії красиво обріжуться і не будуть деформуватися */
+}
+
+
+.myMarqueeSwiper .swiper-slide img {
+    width: 100% !important;
+    height: 300px !important;
+    object-fit: cover !important;
     display: block;
-  }
+}
 
 
 
-h4{
+h4 {
     padding: 0;
     font-family: "Rubik Glitch", system-ui;
     color: #eee;
@@ -220,35 +194,41 @@ h4{
     animation-name: textflicker-1;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    font-family: 'VCR OSD Mono', sans-serif;
 }
-  
+
 @keyframes textflicker-1 {
     0% {
         transform: translate(0, 0) rotate(0deg);
         text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
     }
+
     25% {
-        transform: translate(3px, -5px) rotate(1deg); /* Вгору і вправо + нахил */
+        transform: translate(3px, -5px) rotate(1deg);
         text-shadow: 0.1rem 0.02rem 0.08rem #ea36af, -0.08rem -0.02rem 0.08rem #75fa69;
     }
+
     50% {
-        transform: translate(-3px, 0) rotate(-0.5deg); /* Зміщення вліво по центру */
+        transform: translate(-3px, 0) rotate(-0.5deg);
         text-shadow: -0.05rem 0 0.06rem #ea36af, 0.1rem 0 0.06rem #75fa69;
     }
+
     75% {
-        transform: translate(2px, 5px) rotate(-1deg); /* Вниз і вправо + нахил в інший бік */
+        transform: translate(2px, 5px) rotate(-1deg);
         text-shadow: 0.04rem -0.03rem 0.05rem #ea36af, -0.125rem 0.03rem 0.05rem #75fa69;
     }
+
     100% {
-        transform: translate(0, 0) rotate(0deg); /* Повернення в початкову точку */
+        transform: translate(0, 0) rotate(0deg);
         text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
     }
 }
+
 .r-mask {
     width: 75%;
     animation-name: waveLeftToRight;
-    animation-duration: 1.5s;                 
-    animation-timing-function: ease-in-out; 
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     margin: 40px;
@@ -256,19 +236,31 @@ h4{
 
 @keyframes waveLeftToRight {
     0% {
-        
+
         transform: translateX(-10px) rotate(-5deg);
     }
-    
-    
+
     100% {
-        
+
         transform: translateX(30px) rotate(5deg);
     }
 }
 
-.overflow{
+.overflow {
     overflow: hidden;
 }
 
-/* музика */
+
+
+
+.synth {
+    font-weight: 1000;
+    color: #644947;
+    font-family: "Didact Gothic", sans-serif;
+}
+
+
+b {
+    color: #e7a071;
+    font-weight: bolder;
+}
