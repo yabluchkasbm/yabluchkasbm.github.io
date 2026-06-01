@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Press+Start+2P&family=Rubik+Glitch&display=swap');
+@import url('https://fonts.cdnfonts.com/css/vcr-osd-mono');
+
+
+
+body {
+    background-color: rgb(74, 40, 55);
+    margin: 0;
+    user-select: none;
+
+
+
+}
+
+img, video {
+    width: 100%;
+}
+
+
+ul {
+    font-family: "Rubik Glitch", system-ui;
+}
+
+
+
+
+
+a {
+    text-decoration: none;
+    color: rgb(186, 65, 126);
+    pointer-events: auto;
+    cursor: pointer;
+
+}
+
+
+.main {
+    height: 350px;
+    object-fit: cover;
+    object-position: 60% 50%;
+
+}
+
+.main-1 {
+    height: 350px;
+    object-fit: cover;
+    object-position: 10%;
+
+}
+
+h1 {
+    font-family: 'VCR OSD Mono', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 75px;
+    color: #ef0b79;
+
+}
+
+.my-logo {
+    width: 30%;
+
+}
+
+span {
+    color: #ef0b79;
+    font-family: 'VCR OSD Mono', sans-serif;
+}
+
+p {
+    font-family: "Didact Gothic", sans-serif;
+    color: antiquewhite;
+}
+
+h2 {
+    color: #d91b77;
+    font-family: "Press Start 2P", system-ui;
+    text-align: center;
+    padding: 0;
+    font-size: 1.8em;
+    line-height: 1;
+    text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+    letter-spacing: 0.125em;
+    animation-duration: 0.8s;
+
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+
+h3 {
+    padding: 0;
+    font-family: "Rubik Glitch", system-ui;
+    color: #eee;
+    font-size: 1.8em;
+    line-height: 1;
+    text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+    letter-spacing: 0.125em;
+    animation-duration: 0.8s;
+    animation-name: textflicker;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes textflicker {
+    0% {
+        transform: translateY(10px) skewX(-3deg);
+    }
+
+    50% {
+        transform: translateY(-10px) skewX(3deg);
+    }
+
+    100% {
+        transform: translateY(10px) skewX(-3deg);
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.img-hotline {
+    align-items: center;
+}
+
+
+.long-slider {
+    position: relative;
+    height: 300px;
+    width: 100%;
+
+}
+
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.356);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    transition: 0.8s;
+    font-size: 4em;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    background-color: rgba(134, 131, 131, 0.658);
+
+}
+
+.arrow-right {
+    right: 0;
+}
+
+.item-wrap {
+
+    display: flex;
+    height: 300px;
+    transition: 0.7s ease-out;
+    max-width: 100%;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.slider-item {
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.item-wrap img {
+    height: 100%;
+}
+
+
+
+
+/* 1. Лінійний рух без ривків */
+.myMarqueeSwiper .swiper-wrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    transition-timing-function: linear !important;
+    display: flex !important;
+  }
+  
+  /* 2. Скидаємо примусове розтягування слайду */
+  .myMarqueeSwiper .swiper-slide {
+    width: auto !important; 
+    flex-shrink: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* 3. Контроль розміру самих картинок всередині */
+  .myMarqueeSwiper .swiper-slide img {
+    width: 100% !important;     /* Тепер картинка заповнить свій шматочок (1/4 екрана) */
+    height: 300px !important;   /* Фіксована висота рядка, підлаштуйте під себе */
+    object-fit: cover !important; /* Фотографії красиво обріжуться і не будуть деформуватися */
+    display: block;
+  }
+
+
+
+h4{
+    padding: 0;
+    font-family: "Rubik Glitch", system-ui;
+    color: #eee;
+    font-size: 1.8em;
+    line-height: 1;
+    letter-spacing: 0.125em;
+    animation-duration: 0.8s;
+    animation-name: textflicker-1;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+  
+@keyframes textflicker-1 {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+        text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+    }
+    25% {
+        transform: translate(3px, -5px) rotate(1deg); /* Вгору і вправо + нахил */
+        text-shadow: 0.1rem 0.02rem 0.08rem #ea36af, -0.08rem -0.02rem 0.08rem #75fa69;
+    }
+    50% {
+        transform: translate(-3px, 0) rotate(-0.5deg); /* Зміщення вліво по центру */
+        text-shadow: -0.05rem 0 0.06rem #ea36af, 0.1rem 0 0.06rem #75fa69;
+    }
+    75% {
+        transform: translate(2px, 5px) rotate(-1deg); /* Вниз і вправо + нахил в інший бік */
+        text-shadow: 0.04rem -0.03rem 0.05rem #ea36af, -0.125rem 0.03rem 0.05rem #75fa69;
+    }
+    100% {
+        transform: translate(0, 0) rotate(0deg); /* Повернення в початкову точку */
+        text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+    }
+}
+.r-mask {
+    width: 75%;
+    animation-name: waveLeftToRight;
+    animation-duration: 1.5s;                 
+    animation-timing-function: ease-in-out; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin: 40px;
+}
+
+@keyframes waveLeftToRight {
+    0% {
+        
+        transform: translateX(-10px) rotate(-5deg);
+    }
+    
+    
+    100% {
+        
+        transform: translateX(30px) rotate(5deg);
+    }
+}
+
+.overflow{
+    overflow: hidden;
+}
+
+/* музика */
