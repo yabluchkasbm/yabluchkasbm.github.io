@@ -1,0 +1,50 @@
+.left-panel {
+    background-color: #322e2e;
+    width: 220px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: left 0.5s;
+    color: antiquewhite;
+    font-family: "Rubik Wet Paint", system-ui;
+    z-index: 100500;
+}
+
+.btn-hide-show {
+    position: absolute;
+    left: 79%;
+    top: 15px;
+    border: none;
+    background-color: rgb(41, 36, 36);
+    color: white;
+    font-size: 1.1rem;
+    transition: left 0.8s;
+}
+
+.btn-hide-div::after {
+    content: '\2630';
+    /* кнопка-бургер*/
+}
+
+.btn-hrest::after {
+    content: '\2715';
+    /* хрестик*/
+}
+
+.btn-hide-div {
+    left: 101%;
+}
+
+.hide-panel {
+    left: -220px;
+}
+
+.main-menu{
+    margin-top: 50px;
+    list-style-type: none;
+    padding-left: 30px;
+}
+.container {
+    transition: 0.5s;
+}
