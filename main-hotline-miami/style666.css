@@ -123,7 +123,18 @@ h3 {
 
 .img-hotline {
     align-items: center;
+    
+    transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out;
+    
 }
+.img-hotline:hover {
+    transform: scale(1.05); 
+    
+    filter: drop-shadow(0 0 7px #ef0b79);
+}
+
+
+
 
 
 .long-slider {
@@ -145,7 +156,7 @@ h3 {
 }
 
 .slider-item {
-    margin-left: 10px;
+    
     display: flex;
     justify-content: center;
 }
@@ -158,8 +169,6 @@ h3 {
 
 
 .myMarqueeSwiper .swiper-wrapper {
-    margin-top: 30px;
-    margin-bottom: 30px;
     transition-timing-function: linear !important;
     display: flex !important;
 }
@@ -170,7 +179,7 @@ h3 {
     flex-shrink: 0 !important;
     display: flex;
     justify-content: center;
-    align-items: center;
+    
 }
 
 
@@ -232,6 +241,7 @@ h4 {
     animation-iteration-count: infinite;
     animation-direction: alternate;
     margin: 40px;
+    filter: drop-shadow(0 0 20px #8b5313);
 }
 
 @keyframes waveLeftToRight {
@@ -263,4 +273,62 @@ h4 {
 b {
     color: #e7a071;
     font-weight: bolder;
+}
+
+
+#custom-cursor {
+   
+    pointer-events: none; 
+    transition: transform 0.2s ease, ;
+}
+
+
+#custom-cursor.cursor-link-hover {
+    transform: scale(1.2); 
+   
+    
+}
+
+
+
+
+.m-mask{
+     width: 65%;
+    animation-name: wave;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin: 50px;
+   
+}
+
+
+
+
+@keyframes wave {
+    0% {
+
+        transform: translateX(-5px) rotate(-5deg);
+    }
+
+    100% {
+
+        transform: translateX(25px) rotate(5deg);
+    }
+}
+
+
+h5{
+    font-style: italic;
+}
+
+
+.big{
+    background-color: #400e0a81;
+}
+.big-2{
+    background-color: #4e18318e;
+    box-shadow: 0px 0px  50px 50px #4e18318e;
+    
 }
