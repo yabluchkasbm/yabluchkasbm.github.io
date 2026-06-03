@@ -37,26 +37,52 @@ function drawLines() {
 }
 
 
-// ----------------------
 
-// const slider = document.querySelector('.item-wrap');
-// const scrollStep = 400;
-// const scrollInterval = 3000; 
+const customCursor = document.getElementById('custom-cursor');
 
-// function autoScroll() {
-//   let maxScrollRight = slider.scrollWidth - slider.clientWidth;
-//   if (slider.scrollLeft >= maxScrollRight - 1) {
-//     slider.scrollLeft = 0;} 
-//     else {
-//     slider.scrollLeft += scrollStep; і
-//   }
-// }
 
-// let autoPlay = setInterval(autoScroll, scrollInterval);
-// slider.addEventListener('mouseenter', () => clearInterval(autoPlay));
-// slider.addEventListener('mouseleave', () => {
-//   autoPlay = setInterval(autoScroll, scrollInterval);
-// });
+const links = document.querySelectorAll('a');
+
+links.forEach(link => {
+    // Коли мишка заходить на область посилання
+    link.addEventListener('mouseenter', () => {
+        if (customCursor) {
+            customCursor.classList.add('cursor-link-hover');
+        }
+    });
+
+    // Коли мишка покидає область посилання
+    link.addEventListener('mouseleave', () => {
+        if (customCursor) {
+            customCursor.classList.remove('cursor-link-hover');
+        }
+    });
+});
+
+const myCursor = document.getElementById('custom-cursor');
+// Знаходимо тільки ті теги <img>, які обгорнуті в посилання <a>
+const imageLinks = document.querySelectorAll('a img');
+
+imageLinks.forEach(img => {
+    // Коли курсор заходить на територію картинки
+    img.addEventListener('mouseenter', () => {
+        if (myCursor) {
+            myCursor.classList.add('cursor-img-link-hover');
+        }
+    });
+
+    // Коли курсор покидає картинку
+    img.addEventListener('mouseleave', () => {
+        if (myCursor) {
+            myCursor.classList.remove('cursor-img-link-hover');
+        }
+    });
+});
+
+
+
+
+
 
 
 
@@ -64,5 +90,7 @@ ScrollReveal().reveal('h1', { reset: true, origin: 'top', delay: 700, distance: 
 ScrollReveal().reveal('p', { reset: true, delay: 700, origin: 'bottom', distance: '150px' });
 ScrollReveal().reveal('h2', { reset: true, origin: 'top', delay: 700, distance: '50px' });
 ScrollReveal().reveal('h3', { reset: true, origin: 'top', delay: 700, distance: '50px' });
-// музика
+
+
+
 
