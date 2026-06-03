@@ -11,7 +11,7 @@
   #custom-cursor::before, #custom-cursor::after {
     content: '';
     position: absolute;
-    background: #00ffff;
+    background: #ffffff;
     box-shadow: 0 0 8px #00ffff, 0 0 15px #ff007f;
   }
   #custom-cursor::before {
