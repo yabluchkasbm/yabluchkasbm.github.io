@@ -90,6 +90,7 @@ ScrollReveal().reveal('h1', { reset: true, origin: 'top', delay: 700, distance: 
 ScrollReveal().reveal('p', { reset: true, delay: 700, origin: 'bottom', distance: '150px' });
 ScrollReveal().reveal('h2', { reset: true, origin: 'top', delay: 700, distance: '50px' });
 ScrollReveal().reveal('h3', { reset: true, origin: 'top', delay: 700, distance: '50px' });
+ScrollReveal().reveal('h5', { reset: true, delay: 700, distance: '50px' });
 
 
 
