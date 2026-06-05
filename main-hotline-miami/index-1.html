@@ -31,10 +31,12 @@
 
         <ul class="main-menu">
             <li><a href="index.html">Hotline-Main</a></li>
-            <li> <a href="#hm">Hotline Miami</a></li>
-            <li><a href="#hm-2">Hotline Miami 2: Wrong Number</a></li>
-            <li><a href="#impo">Маски</a></li>
-            <li><a href="#video">Video</a></li>
+            <li> <a href="#hm">Коротко про головне</a></li>
+            <li><a href="#info">Огляд</a></li>
+            <li><a href="#refs">Референси</a></li>
+            <li><a href="#video">Відос</a></li>
+            <li><a href="#me">Титри</a></li>
+
         </ul>
 
     </div>
@@ -197,7 +199,7 @@
 
     <div class="big">
 
-        <div class="container">
+        <div class="container" id="info">
             <div class="row">
                 <div class="col-md-12 mt-5">
                     <h2>Повний огляд створення та сюжет</h2>
@@ -210,22 +212,25 @@
 
 
 
-        <div class="container my-5">
+        <div class="container my-5" id="refs">
             <div class="row align-items-center">
 
                 <div class="col-md-6">
-                    <p>Hotline Miami розробили Dennaton Games — невелика шведська команда, яку складають Джонатан
+                    <p> <span>Hotline Miami</span> розробили <span> Dennaton Games</span> — невелика шведська команда,
+                        яку складають Джонатан
                         «Cactus»
-                        Содерстрьом і Деніс Ведін. Ідея народилася з експериментів у GameMaker і з попередніх
+                        Содерстрьом і Деніс Ведін. Ідея народилася з експериментів у <span> GameMaker</span> і з
+                        попередніх
                         прототипів,
                         зокрема «Super Carnage», а також із бажання створити гру з миттєвим, каральним геймплеєм і
                         сильною
                         музичною складовою. Розробка була швидкою та інтуїтивною, багато рішень приймалися
                         експериментально
                         під час прототипування. Цікаво, що Dennaton Games створили
-                        першу частину всього за дев’ять місяців, використовуючи GameMaker. У грі також можна почути
+                        першу частину всього за дев’ять місяців, використовуючи те саме програмне забезпечення. У грі
+                        також можна почути
                         легендарні саунтреки, які захоплюють ретро атмосферою, написаними,
-                        на кшталт El Huervo, Perturbator, M|O|O|N . </p>
+                        на кшталт <span> El Huervo, Perturbator, M|O|O|N </span>. </p>
                 </div>
                 <div class="col-md-6 col-sm-6 col-md-6 ">
                     <img src="code/Dennaton_Games.png" alt="">
@@ -237,20 +242,23 @@
 
         <div class="container my-5">
             <div class="row align-items-center">
-                <div class="col-md-6">
+                <label class="col-md-6 mask-click-area" for="mask-checkbox">
+                    <input type="checkbox" id="mask-checkbox" class="mask-toggle">
                     <img class="m-mask" src="code/mark.gif" alt="">
-
-                </div>
+                </label>
                 <div class="col-md-6">
-                    <h3>Референси</h3>
-                    <p class="game">Hotline Miami 2: Wrong Number, випущена у 2015 році, розширює всесвіт і додає кілька
+                    <h5>Референси</h5>
+                    <p class="game"> <span>Hotline Miami 2: Wrong Number</span>, випущена у 2015 році, розширює всесвіт
+                        і додає кілька
                         протагоністів:
                         журналіста Евана Врайта, фанів, корумпованого копа Менні Пардо, сина мафіозного боса,
-                        ветеранів війни. Хронологія охоплює події від війни на Гаваях у 1980‑х до Майамі початку 1990‑х.
-                        Сюжет подається нелінійно, змушуючи гравця сумніватися, що є реальністю, а що — вигадкою чи
+                        ветеранів війни. Хронологія охоплює події від війни на Гаваях у 1980‑х до Маямі початку 1990‑х.
+                        Сюжет подається нелінійно, змушуючи гравця сумніватися, що є реальністю, а що саме вигадкою чи
                         пропагандою. Цей підхід нагадує структуру фільмів Квентіна Тарантіно, де сцени перемішані, а
-                        моральні межі розмиті. У грі є алюзії на «Apocalypse Now» через образ полковника з пантерою, що
-                        перегукується з Курцом у виконанні Марлона Брандо, а також відсилання до «Cocaine Cowboys» —
+                        моральні межі розмиті. У грі є алюзії на <span>«Apocalypse Now»</span> через образ полковника з
+                        пантерою, що
+                        перегукується з Курцом у виконанні Марлона Брандо, а також відсилання до <span> «Cocaine
+                            Cowboys»</span> —
                         документального фільму про наркокартелі, який надихнув творців. </p>
                 </div>
             </div>
@@ -258,11 +266,12 @@
 
 
 
-        <div class="container my-5" id="video">
+        <div class="container mt-5" id="video">
             <div class="row align-items-center">
 
                 <div class="col-md-6">
-                    <p>Hotline Miami стала символом інді‑сцени, продалася тиражем понад 1,5 мільйона копій до 2015 року
+                    <p> <span>Hotline Miami</span> стала символом інді‑сцени, продалася тиражем понад 1,5 мільйона копій
+                        до 2015 року
                         й надихнула цілу хвилю ігор у стилі неонового ретро. Вона вплинула на музику, кіно й навіть
                         літературу, адже її структура й теми перегукуються з постмодерністськими романами, де немає
                         чітких відповідей, а є лише питання. Це гра, яка змушує гравця відчувати провину за свої дії,
@@ -271,11 +280,31 @@
                         у сучасній інді‑культурі.</p>
                 </div>
                 <div class="col-md-6 col-sm-6 col-md-6">
-                    <video src="code/video-1.mp4" autoplay loop muted></video>
+                    <video src="code/video.mp4" autoplay loop muted></video>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="header" id="me">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <img class="img-header" src="code/hm-header.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <p class="p-class text-center p-5">Зроблено -> <span>smas_buttermetter</span></p>
+
+        <h2>ДЯКУЮ ЗА УВАГУ!</h2>
+
+    </div>
+
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
