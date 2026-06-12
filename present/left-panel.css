@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Didact+Gothic&family=DotGothic16&family=Kablammo&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Rubik+Bubbles&family=Rubik+Doodle+Shadow&family=Rubik+Glitch&family=Rubik+Mono+One&family=Rubik+Vinyl&family=Rubik+Wet+Paint&family=Ruslan+Display&display=swap');
+
+
+
+.left-panel {
+    background-color:rgba(95, 64, 74, 0.555); 
+    backdrop-filter: blur(10px); 
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s; 
+    z-index: 100500;
+    border-right: 4px solid  #ff78f0;
+
+    
+    
+}
+
+
+.left-panel.hide-panel {
+    transform: translateX(-250px);
+}
+
+
+.btn-hide-show {
+    position: absolute;
+    top: 20px;
+    right: -55px; 
+    width: 35px;
+    height: 35px;
+    background-color: #ff78f0;
+    border-radius: 8px;
+    color: #0803fe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    font-size: 1.3em;
+}
+
+
+
+
+
+.btn-hide-div::after {
+    content: '\2630'; 
+}
+
+.btn-hrest::after {
+    content: '\2715'; 
+}
+
+
+.main-menu {
+    margin-top: 60px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.main-menu li {
+    margin-bottom: 18px; 
+    perspective: 1000px;
+}
+
+
+.main-menu li a {
+    display: block;
+    padding: 12px 15px;
+    color: antiquewhite;
+     font-family: "Rubik Mono One", monospace;
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    
+}
+
+
+.main-menu li a:hover {
+    color: #fff; 
+    padding-left: 20px; 
+    border-right: 3px solid rgb(64, 68, 95);
+    background-color: #0703fe6a;
+
+    
+    
+}
+
+.container {
+    transition: all 0.5s ease;
+}
+
+li{
+    padding: 15px;
+    
+
+}

@@ -1,0 +1,61 @@
+img{
+    width: 100%;
+}
+
+body{
+    background-color: rgb(162, 180, 196);
+    margin: 0 ;
+}
+
+
+
+.main-2{
+    width: 80%;
+    text-align: center;
+    display: block;
+    
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-top: -100px;
+  
+}
+
+.my-banner {
+  
+  background-image: url('fotos/1.jpg');
+   height: 500px;
+    background-size: cover;
+    background-position: 50% 20%;
+    min-height: 350px;
+  padding: 60px 20px; 
+ 
+  
+ 
+}
+
+h1{
+    padding-top: 90px;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Rubik Bubbles", system-ui;
+    color: #ff78f0;
+    
+
+}
+
+.main-p{
+    font-family: "Kablammo", system-ui;
+    font-size: 40px;
+    color:#0803fe;
+    text-align: center;
+}
+
+
+.header-img{
+    height: 400px;
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+
+
